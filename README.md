@@ -13,13 +13,13 @@ MailChimp Manager is a wrapper for MailChimp.com's version 1.3 API focus on mana
 
 3. Usage
 ---------------------
-```from mailchimp_manager import MailChimpManager
-listMgr = MailChimpManager.ListManager('Your-API-Key')
-listMgr.subscribe('foo@bar.com')    # Add foo@bar.com to subscribed list
-listMgr.unsubscribe('foo@bar.com')  # Move foo@bar.com to unsubscribed list
-listMgr.listMembers()    # List subscribed list
-listMgr.listMembers(MailChimpManager.ListManager.MEMBER_STATUS.SUBSCRIBED)    # List subscribed list, again
-listMgr.listMembers(MailChimpManager.ListManager.MEMBER_STATUS.UNSUBSCRIBED)  # List unsubscribed list
+```from mailchimp_manager import MailChimpManager   
+listMgr = MailChimpManager.ListManager('Your-API-Key')   
+listMgr.subscribe('foo@bar.com')    # Add foo@bar.com to subscribed list   
+listMgr.unsubscribe('foo@bar.com')  # Move foo@bar.com to unsubscribed list   
+listMgr.listMembers()    # List subscribed list   
+listMgr.listMembers(MailChimpManager.ListManager.MEMBER_STATUS.SUBSCRIBED)    # List subscribed list, again   
+listMgr.listMembers(MailChimpManager.ListManager.MEMBER_STATUS.UNSUBSCRIBED)  # List unsubscribed list   
 ```
 
 You can also put a settings.py in the program folder as global settings.
